@@ -1,5 +1,7 @@
 import NavBar from "./components/NavBar";
 import Card from "./components/Card";
+import Counter from "./components/Counter";
+
 import "./styles/main.css"
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <div>
             <NavBar/>
             <NavBar/>
+
+            <Counter/>
 
             {/*properties => props*/}
             <div className="container">
