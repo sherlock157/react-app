@@ -5,26 +5,34 @@ import "./styles/main.css"
 function App() {
     let number = 1234;
 
-  return (
-    <div>
-        <NavBar />
-        <NavBar />
+    const showText = () => {
+        console.log("Button clicked!")
+    }
 
-        {/*properties => props*/}
-        <div className="container">
-            <Card title="Hello world" description="fe mwkfewlk fmkelw mefwkl"/>
-            <Card title="Nimadir" description="ngtrnhtrn jkt"/>
-            <Card title="Hello Topskill" description="n rjewng jkrwngjk wenkjf enwkj"/>
-            <Card title="Nimadirlar" description="fewfn fnewjn fkjewnf kjew"/>
-            <Card title="fkewmnkfnewlk fnewklf mewkl" description="gnrjwn jkwenfjk ewnf ekwj"/>
-            <Card title="nfekwfn ejwknf jweknfkj enw" description="fjewn fewjlnf kewnfk jwenf ewkjn"/>
+
+    return (
+        <div>
+            <NavBar/>
+            <NavBar/>
+
+            {/*properties => props*/}
+            <div className="container">
+                <Card title="Hello world" description="fe mwkfewlk fmkelw mefwkl"/>
+                <Card title="Nimadir" description="ngtrnhtrn jkt"/>
+                <Card title="Hello Topskill" description="n rjewng jkrwngjk wenkjf enwkj"/>
+                <Card title="Nimadirlar" description="fewfn fnewjn fkjewnf kjew"/>
+                <Card title="fkewmnkfnewlk fnewklf mewkl" description="gnrjwn jkwenfjk ewnf ekwj"/>
+                <Card title="nfekwfn ejwknf jweknfkj enw" description="fjewn fewjlnf kewnfk jwenf ewkjn"/>
+            </div>
+
+            <br/>
+
+            <p style={{color: "red", fontSize: "34px", fontFamily: "sans-serif"}}>{number}</p>
+
+            <button type="button" onClick={() => {console.log("Hello world!"); showText() }}>Click me!</button>
+            <button type="button" onClick={showText} onMouseEnter={() => console.log("Hover")}>Click me!!!</button>
         </div>
-
-        <br/>
-
-        <p style={{color: "red", fontSize: "34px", fontFamily: "sans-serif"}}>{number}</p>
-    </div>
-  );
+    );
 }
 
 export default App;

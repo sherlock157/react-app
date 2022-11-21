@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/main.css";
 
 const Card = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
         <div className="card">
             <img src="/logo192.png" alt="logo"/>
