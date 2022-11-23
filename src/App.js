@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import Card from "./components/Card";
 import Counter from "./components/Counter";
 import CounterClass from "./components/CounterClass";
+import ClassLifeCycle from "./components/ClassLifeCycle";
 
 import "./styles/main.css"
 
@@ -20,7 +21,8 @@ function App() {
 
             {/*<Counter/>*/}
 
-            <CounterClass/>
+            {/*<CounterClass/>*/}
+            <ClassLifeCycle/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
