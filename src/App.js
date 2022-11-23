@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Counter from "./components/Counter";
 import CounterClass from "./components/CounterClass";
 import ClassLifeCycle from "./components/ClassLifeCycle";
-
+import Hook from "./components/Hook";
 import "./styles/main.css"
 
 function App() {
@@ -22,7 +22,8 @@ function App() {
             {/*<Counter/>*/}
 
             {/*<CounterClass/>*/}
-            <ClassLifeCycle/>
+            {/*<ClassLifeCycle/>*/}
+            <Hook/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
