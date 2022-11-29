@@ -7,6 +7,7 @@ import Hook from "./components/Hook";
 import Bootstrap from "./components/Bootstrap";
 import Reactstrap from "./components/Reactstrap";
 import "./styles/main.css"
+import ReactModalVideo from "./components/ReactModalVideo";
 
 function App() {
     let number = 1234;
@@ -28,6 +29,7 @@ function App() {
             {/*<Hook/>*/}
             <Bootstrap/>
             <Reactstrap/>
+            <ReactModalVideo/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
