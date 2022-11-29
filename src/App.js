@@ -5,6 +5,7 @@ import CounterClass from "./components/CounterClass";
 import ClassLifeCycle from "./components/ClassLifeCycle";
 import Hook from "./components/Hook";
 import Bootstrap from "./components/Bootstrap";
+import Reactstrap from "./components/Reactstrap";
 import "./styles/main.css"
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             {/*<ClassLifeCycle/>*/}
             {/*<Hook/>*/}
             <Bootstrap/>
+            <Reactstrap/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
