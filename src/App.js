@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import CounterClass from "./components/CounterClass";
 import ClassLifeCycle from "./components/ClassLifeCycle";
 import Hook from "./components/Hook";
+import Bootstrap from "./components/Bootstrap";
 import "./styles/main.css"
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
 
             {/*<CounterClass/>*/}
             {/*<ClassLifeCycle/>*/}
-            <Hook/>
+            {/*<Hook/>*/}
+            <Bootstrap/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
