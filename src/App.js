@@ -8,6 +8,7 @@ import Bootstrap from "./components/Bootstrap";
 import Reactstrap from "./components/Reactstrap";
 import "./styles/main.css"
 import ReactModalVideo from "./components/ReactModalVideo";
+import Gallery from "./components/Gallery";
 
 function App() {
     let number = 1234;
@@ -30,6 +31,7 @@ function App() {
             <Bootstrap/>
             <Reactstrap/>
             <ReactModalVideo/>
+            <Gallery/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
