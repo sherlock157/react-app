@@ -9,6 +9,7 @@ import Reactstrap from "./components/Reactstrap";
 import "./styles/main.css"
 import ReactModalVideo from "./components/ReactModalVideo";
 import Gallery from "./components/Gallery";
+import Store from "./components/store/Store";
 
 function App() {
     let number = 1234;
@@ -28,10 +29,11 @@ function App() {
             {/*<CounterClass/>*/}
             {/*<ClassLifeCycle/>*/}
             {/*<Hook/>*/}
-            <Bootstrap/>
-            <Reactstrap/>
-            <ReactModalVideo/>
-            <Gallery/>
+            {/*<Bootstrap/>*/}
+            {/*<Reactstrap/>*/}
+            {/*<ReactModalVideo/>*/}
+            {/*<Gallery/>*/}
+            <Store/>
 
             {/*properties => props*/}
             {/*<div className="container">*/}
