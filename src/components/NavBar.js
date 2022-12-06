@@ -1,15 +1,19 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 class NavBar extends React.Component{
     render(){
         return (
-            <nav>
-                <img src="/logo192.png" alt="logo"/>
-                <ul>
-                    <li><a href="#">Bosh sahifa</a></li>
-                    <li><a href="#">Yangiliklar</a></li>
-                    <li><a href="#">Biz haqimizda</a></li>
-                </ul>
+            <nav className="navbar navbar-expand-md navbar-light bg-secondary mb-4">
+               <div className="container">
+                   <Link to="/" className="navbar-brand">
+                       <img src="/logo192.png" alt="logo" width="50"/>
+                   </Link>
+                   <ul className="navbar-nav">
+                       <li className="nav-item"><Link to="/store" className="nav-link">Store</Link></li>
+                       <li className="nav-item"><Link to="/counter" className="nav-link">Counter</Link></li>
+                       <li className="nav-item"><Link to="/modal-video" className="nav-link">ModalVideo</Link></li>
+                   </ul>
+               </div>
             </nav>
         )
     }
