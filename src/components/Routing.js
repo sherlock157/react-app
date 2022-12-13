@@ -5,6 +5,9 @@ import Store from "./store/Store";
 import Counter from "./Counter";
 import ReactModalVideo from "./ReactModalVideo";
 import NavBar from "./NavBar";
+import NotFound from "./NotFound";
+import DynamicRouting from "./DynamicRouting";
+
 const Routing = () => {
     return (
         <div>
@@ -15,6 +18,10 @@ const Routing = () => {
                     <Route path="/store" exact component={Store}/>
                     <Route path="/counter" exact component={Counter}/>
                     <Route path="/modal-video" exact component={ReactModalVideo}/>
+                    <Route path="/news/category/:name" exact component={DynamicRouting}/>
+
+
+                    <Route component={NotFound}/>
                 </Switch>
             </BrowserRouter>
         </div>
