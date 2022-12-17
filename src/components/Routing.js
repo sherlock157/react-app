@@ -8,6 +8,8 @@ import NavBar from "./NavBar";
 import NotFound from "./NotFound";
 import DynamicRouting from "./DynamicRouting";
 import Api from "./Api";
+import PostList from "./PostList";
+import PostView from "./PostView";
 
 const Routing = () => {
     return (
@@ -21,7 +23,8 @@ const Routing = () => {
                     <Route path="/modal-video" exact component={ReactModalVideo}/>
                     <Route path="/news/category/:name" exact component={DynamicRouting}/>
                     <Route path="/api" exact component={Api}/>
-
+                    <Route path="/posts" exact component={PostList}/>
+                    <Route path="/posts/:id" exact component={PostView}/>
 
                     <Route component={NotFound}/>
                 </Switch>
