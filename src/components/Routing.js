@@ -7,6 +7,7 @@ import ReactModalVideo from "./ReactModalVideo";
 import NavBar from "./NavBar";
 import NotFound from "./NotFound";
 import DynamicRouting from "./DynamicRouting";
+import Api from "./Api";
 
 const Routing = () => {
     return (
@@ -19,6 +20,7 @@ const Routing = () => {
                     <Route path="/counter" exact component={Counter}/>
                     <Route path="/modal-video" exact component={ReactModalVideo}/>
                     <Route path="/news/category/:name" exact component={DynamicRouting}/>
+                    <Route path="/api" exact component={Api}/>
 
 
                     <Route component={NotFound}/>
