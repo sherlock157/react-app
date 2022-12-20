@@ -10,6 +10,8 @@ import DynamicRouting from "./DynamicRouting";
 import Api from "./Api";
 import PostList from "./PostList";
 import PostView from "./PostView";
+import StoreApi from "./store-api/StoreApi";
+import {ToastContainer} from "react-toastify";
 
 const Routing = () => {
     return (
@@ -25,10 +27,12 @@ const Routing = () => {
                     <Route path="/api" exact component={Api}/>
                     <Route path="/posts" exact component={PostList}/>
                     <Route path="/posts/:id" exact component={PostView}/>
+                    <Route path="/store-api" exact component={StoreApi}/>
 
                     <Route component={NotFound}/>
                 </Switch>
             </BrowserRouter>
+            <ToastContainer/>
         </div>
     );
 };
